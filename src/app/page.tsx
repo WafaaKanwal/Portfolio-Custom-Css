@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export default function Home() {
   return (
     <div>
@@ -7,7 +8,7 @@ export default function Home() {
         <div className="home-content">
           <div className="home-text">
             <h1 className="home-title">
-              I'm <span className="highlight-text">Wafa</span>, <br />
+              I&apos;m <span className="highlight-text">Wafa</span>, <br />
               a Web Developer
             </h1>
             <p className="home-description">
@@ -55,7 +56,7 @@ export default function Home() {
           eager to build something meaningful and impactful.
         </p>
         <p>
-          Let's work together to bring innovative ideas to life and create the future of the web. I am always open to new
+          Let&apos;s work together to bring innovative ideas to life and create the future of the web. I am always open to new
           opportunities, so feel free to reach out and connect with me!
         </p>
       </section>
@@ -155,56 +156,57 @@ export default function Home() {
 
       {/* Contact Section */}
       <section className="contact-section" id="contact">
-      <div className="contact-content">
-        <h2>Contact Me</h2>
-        <p>
-          I&apos;m always excited to connect with new people, whether it&apos;s for
-          collaborations, networking, or just to chat about cool projects. If
-          you have any inquiries or would like to discuss a potential
-          partnership, feel free to reach out!
-        </p>
-        <p className="email">
-          Email: <a href="mailto:wafakanwal@email.com">wafakanwal@email.com</a>
-        </p>
-
-        <p className="availability">
-          I&apos;m currently open to freelance opportunities and collaborations.
-          Let&apos;s create something amazing together!
-        </p>
-
-        <div className="social-icons">
-          <p className="social-heading">
-            You can also connect with me on these platforms:
+        <div className="contact-content">
+          <h2>Contact Me</h2>
+          <p>
+            I&apos;m always excited to connect with new people, whether it&apos;s for
+            collaborations, networking, or just to chat about cool projects. If
+            you have any inquiries or would like to discuss a potential
+            partnership, feel free to reach out!
           </p>
-          {/* LinkedIn Icon */}
-          <a
-            href="https://www.linkedin.com/in/wafa-kanwal-467376279/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
-              alt="LinkedIn"
-              width={32}
-              height={32}
-            />
-          </a>
-          {/* GitHub Icon */}
-          <a
-            href="https://github.com/WafaaKanwal?"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-              alt="GitHub"
-              width={32}
-              height={32}
-            />
-          </a>
+          <p className="email">
+            Email: <a href="mailto:wafakanwal@email.com">wafakanwal@email.com</a>
+          </p>
+
+          <p className="availability">
+            I&apos;m currently open to freelance opportunities and collaborations.
+            Let&apos;s create something amazing together!
+          </p>
+
+          <div className="social-icons">
+            <p className="social-heading">
+              You can also connect with me on these platforms:
+            </p>
+            {/* LinkedIn Icon */}
+            <a
+              href="https://www.linkedin.com/in/wafa-kanwal-467376279/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+                alt="LinkedIn"
+                width={35}
+                height={35}
+              />
+            </a>
+            {/* GitHub Icon */}
+            <a
+              href="https://github.com/WafaaKanwal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                alt="GitHub"
+                width={35}
+                height={35}
+              />
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
     </div>
   );
 }
