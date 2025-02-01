@@ -1,7 +1,15 @@
+
+'use client'
 import Image from "next/image";
 
-
 export default function Home() {
+  // Function to handle CV view
+  const handleViewCV = () => {
+    // Replace this URL with the actual URL of your CV image
+    const cvUrl = "/images/wk-cv.png"; // Path to your CV image in the public folder
+    window.open(cvUrl, "_blank"); // Opens the image in a new tab
+  };
+
   return (
     <div>
       <section id="home" className="home-section">
@@ -20,7 +28,8 @@ export default function Home() {
 
             <div className="button-group">
               <button className="hire-button">Hire Me</button>
-              <button className="portfolio-button">View Portfolio</button>
+              {/* Updated button to View CV */}
+              <button className="portfolio-button" onClick={handleViewCV}>View CV</button>
             </div>
           </div>
           <div className="home-image">
